@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/olbauday/FPL-Core-Insights",
+  "commit": "e6b2df626bc62c0fedc97c59a8a6e34c09212f85",
+  "season": "2025-2026",
+  "competition": "Premier League",
+  "gameweeks": 38,
+  "rating_column": "rating",
+  "rating_provenance": "Recorded dataset rating; selected values agree with Sofascore, but complete upstream rating lineage is not established by the public repository."
+}

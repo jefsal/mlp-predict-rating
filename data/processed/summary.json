@@ -1,0 +1,24 @@
+{
+  "source_commit": "e6b2df626bc62c0fedc97c59a8a6e34c09212f85",
+  "matches": 380,
+  "appearance_rows_including_nonappearances": 12754,
+  "positive_minute_rows": 11492,
+  "rated_positive_minute_rows": 11235,
+  "forecast_rows": 8872,
+  "history_window": 5,
+  "features": [
+    "past_5_minutes_played_mean",
+    "past_5_goals_mean",
+    "past_5_assists_mean",
+    "past_5_total_shots_mean",
+    "past_5_xg_mean",
+    "past_5_xa_mean",
+    "past_5_accurate_passes_mean",
+    "past_5_tackles_won_mean",
+    "past_5_interceptions_mean",
+    "past_5_saves_mean",
+    "past_5_rating_mean",
+    "past_5_rating_count"
+  ],
+  "target": "target_rating"
+}
