@@ -1,6 +1,15 @@
 # MLP player rating forecast
 
-CSC 671 project: forecast a player's next rated Premier League appearance using only information available before kickoff. Target players require positive recorded minutes and a match rating.
+This CSC 671 project uses a multi-layer perceptron (MLP) to forecast a soccer player's rating in their next rated Premier League appearance. Using the 2025–26 season, we will learn from each player's previous five appearances and compare how different model settings affect prediction accuracy.
+Predictions use only information available before kickoff and are evaluated on appearances with positive recorded minutes and a match rating.
+
+## Project goals
+
+- [x] Prepare the dataset.
+- [ ] Split the data into training, validation, and test sets by date.
+- [ ] Build and train an MLP to predict player ratings.
+- [ ] Tune the model's hyperparameters.
+- [ ] Test the model and compare results with simple baselines.
 
 ## Setup
 
@@ -25,15 +34,16 @@ uv run python -m unittest discover -s tests -v
 
 The source is [FPL-Core-Insights](https://github.com/olbauday/FPL-Core-Insights), a community collection of real match statistics and derived metrics used for fantasy-football(soccer) analysis. This project uses the completed 2025–26 Premier League season. The exact source commit and scope are in `data/source.json`.
 
-We prepare our own joined dataset from existing source CSVs. We do __not__ invent player statistics or ratings:
+We prepare our own joined dataset from existing source CSVs.
 
 - `playermatchstats.csv`: player-match statistics and authoritative `minutes_played`.
 - `player_match_enrichment.csv`: the recorded match rating.
 - `matches.csv`: match IDs and kickoff dates.
 - `players.csv`: names, IDs, and positions.
 
-Only the `By Tournament/Premier League` match files are downloaded. Other folders repeat records and can contain other competitions. 
-Originals stay in `data/raw/<commit>/` unchanged and are ignored by Git. Commit the three curated files in `data/processed/` together with the preparation scripts, source manifest, and `uv.lock`. When the dataset changes, update the preparation code, regenerate the files, run the checks, and commit the code and data together rather than manually editing generated CSVs.
+Only the `By Tournament/Premier League` match files are downloaded.
+Originals stay in `data/raw/<commit>/` unchanged and are ignored by Git.
+Commit the three curated files in `data/processed/` together with the preparation scripts, source manifest, and `uv.lock`. When the dataset changes, update the preparation code, regenerate the files, run the checks, and commit the code and data together rather than manually editing generated CSVs.
 
 The preparation script writes:
 
