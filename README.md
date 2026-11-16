@@ -1,7 +1,7 @@
 # MLP player rating forecast
 
 This CSC 671 project uses a multi-layer perceptron (MLP) to forecast a soccer player's rating in their next rated Premier League appearance. Using the 2025–26 season, we will learn from each player's previous five appearances and compare how different model settings affect prediction accuracy.
-Predictions use only information available before kickoff and are evaluated on appearances with positive recorded minutes and a match rating.
+Predictions use only information available before kickoff and are evaluated on match appearances with actual playtime and a match rating.
 
 ## Project goals
 
