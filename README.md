@@ -6,8 +6,8 @@ Predictions use only information available before kickoff and are evaluated on m
 ## Project goals
 
 - [x] Prepare the dataset.
-- [ ] Split the data into training, validation, and test sets by date.
-- [ ] Build and train an MLP to predict player ratings.
+- [x] Split the data into training, validation, and test sets by date.
+- [x] Build and train an MLP to predict player ratings.
 - [ ] Tune the model's hyperparameters.
 - [ ] Test the model and compare results with simple baselines.
 
